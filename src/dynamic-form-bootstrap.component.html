@@ -207,7 +207,7 @@
     </div>
 
 
-    <ul *ngIf="hasErrorMessaging" class="has-danger"
+    <ul *ngIf="hasErrorMessaging && isInvalid" class="has-danger"
         [class.hidden]="!showErrorMessages"
         [ngClass]="[model.cls.grid.errors]">
 
